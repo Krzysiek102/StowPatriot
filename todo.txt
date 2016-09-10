@@ -1,0 +1,5 @@
+copy important files from existing web page
+copy images from server and add them to gitignore
+remove # from url
+add automation for minification
+add automation for deployment

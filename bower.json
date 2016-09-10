@@ -1,0 +1,17 @@
+{
+  "name": "StowPatriot",
+  "homepage": "http://stowpatriot.ugu.pl/",
+  "authors": [
+    "Krzysiek102 <Krzysztof.Kurek102@gmail.com>"
+  ],
+  "description": "Stowarzyszenie Chrześcijańsko-Patriotyczne Ziemii Włodawskiej",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
