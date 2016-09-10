@@ -1,5 +1,11 @@
-copy important files from existing web page
-copy images from server and add them to gitignore
-remove # from url
-add automation for minification
+remove all gallery stuff
+
+get rid of bundling and minification
+
+move important files from existing web page with bower to vs code
+
+add bundling and minification
+
 add automation for deployment
+
+remove # from url
