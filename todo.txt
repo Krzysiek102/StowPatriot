@@ -1,15 +1,12 @@
-remove old files
-push to github
-tsd install
-jsconfig file appropriate content
-check the size of the page
-update dependent css and js version
-use strict
-Update Visual Studio 2015
-flatten the path to images
-reorganise js structure
 add bundling and minification
 add automation for deployment
+
+tsd install
+jsconfig file appropriate content
+update dependent css and js version
+use strict
+flatten the path to images
+reorganise js structure
 archive - clicking on the image should move to the page
 change spPosts to json
 remove # from url
