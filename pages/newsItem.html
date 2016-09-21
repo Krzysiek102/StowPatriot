@@ -1,0 +1,15 @@
+﻿<div class="posts">
+    <section class="post">
+        <header class="post-header">
+            <a href="#news" class="secondary-button pure-button post-avatar"> Powrót do aktualności</a>
+            <h2 class="post-title">
+                {{c.post.title}}
+            </h2>
+            <p class="post-meta">
+                {{c.post.date | date:'yyyy-MM-dd'}}
+            </p>
+        </header>
+        <div class="post-description" ng-include="c.post.descriptionPageUrl">
+        </div>
+    </section>
+</div>

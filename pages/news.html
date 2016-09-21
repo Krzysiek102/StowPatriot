@@ -1,0 +1,32 @@
+﻿Szukaj: 
+<input ng-model="query">
+Sortuj:
+<select ng-model="c.orderMode">
+    <option value="-date">Od najnowszych</option>
+    <option value="date">Od najstarszych</option>
+    <option value="title">Alfabetycznie</option>
+</select>
+
+<div ng-repeat="post in c.posts | filter:query | orderBy:c.orderMode">
+    <div class="posts">
+        <section class="post">
+            <header class="post-header">
+                <a href="#news/{{post.id}}">
+                    <img class="post-avatar" height="80" width="80" ng-src="{{post.titleImageUrl}}">
+                </a>
+                <h2 class="post-title">
+                    <a href="#news/{{post.id}}">{{post.title}}</a>
+                </h2>
+                <p class="post-meta">
+                    {{post.date | date:'yyyy-MM-dd'}}
+                </p>
+            </header>
+            <div class="post-description">
+                <p>
+                {{post.shortDescription}} 
+                    <a href="#news/{{post.id}}">Czytaj więcej</a>
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
