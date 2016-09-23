@@ -1,8 +1,3 @@
-remove old files
-push to github
-tsd install
-jsconfig file appropriate content
-check the size of the page
 update dependent css and js version
 use strict
 Update Visual Studio 2015

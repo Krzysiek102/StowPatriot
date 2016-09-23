@@ -6,6 +6,7 @@ Prerequisites:
 * download and install node
 * install node http server: npm install -g http-server
 * bower install
+* tsd install
 
 How to run a page:
 * in the folder containing index.html file, run command: http-server -c-1
