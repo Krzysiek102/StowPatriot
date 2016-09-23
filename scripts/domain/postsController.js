@@ -38,4 +38,3 @@ var stowPatriot;
     })(postsController);
     stowPatriot.archivesController = archivesController;
 })(stowPatriot || (stowPatriot = {}));
-//# sourceMappingURL=postsController.js.map

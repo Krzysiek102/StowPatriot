@@ -57,4 +57,3 @@ var stowPatriot;
     })(postController);
     stowPatriot.archivesItemController = archivesItemController;
 })(stowPatriot || (stowPatriot = {}));
-//# sourceMappingURL=postController.js.map

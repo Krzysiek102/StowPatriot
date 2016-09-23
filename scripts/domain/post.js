@@ -21,4 +21,3 @@ var stowPatriot;
     })();
     stowPatriot.post = post;
 })(stowPatriot || (stowPatriot = {}));
-//# sourceMappingURL=post.js.map
