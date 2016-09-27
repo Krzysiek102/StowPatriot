@@ -1,4 +1,4 @@
-add bundling and minification
+add bundling, minification and watching files
 add automation for deployment
 
 tsd install
@@ -7,7 +7,7 @@ update dependent css and js version
 use strict
 flatten the path to images
 reorganise js structure
-archive - clicking on the image should move to the page
+clicking on the image in archive should move to the page
 change spPosts to json
 remove # from url
 getPostItemById - replace == with ===

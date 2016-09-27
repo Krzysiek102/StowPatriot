@@ -5,6 +5,8 @@ http://stowpatriot.ugu.pl
 Prerequisites:
 * download and install node
 * install node http server: npm install -g http-server
+* npm install grunt-cli -g
+* npm install
 * bower install
 
 How to run a page:
