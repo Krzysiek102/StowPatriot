@@ -8,6 +8,7 @@ Prerequisites:
 * npm install grunt-cli -g
 * npm install
 * bower install
+* tsd install
 
 How to run a page:
 * in the folder containing index.html file, run command: http-server -c-1

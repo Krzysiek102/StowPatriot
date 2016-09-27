@@ -21,4 +21,3 @@ var stowPatriot;
     })();
     stowPatriot.versionHelper = versionHelper;
 })(stowPatriot || (stowPatriot = {}));
-//# sourceMappingURL=consts.js.map

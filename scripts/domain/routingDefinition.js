@@ -44,4 +44,3 @@ var stowPatriot;
     })();
     stowPatriot.routingDefinition = routingDefinition;
 })(stowPatriot || (stowPatriot = {}));
-//# sourceMappingURL=routingDefinition.js.map

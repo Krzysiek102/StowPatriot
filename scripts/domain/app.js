@@ -11,4 +11,3 @@ var stowPatriot;
         .directive('spMenu', stowPatriot.spMenu)
         .service('spPosts', stowPatriot.spPosts);
 })(stowPatriot || (stowPatriot = {}));
-//# sourceMappingURL=app.js.map
