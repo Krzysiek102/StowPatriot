@@ -1,13 +1,14 @@
-add bundling, minification and watching files
-add automation for deployment
-
-tsd install
-jsconfig file appropriate content
-update dependent css and js version
-use strict
+separate minification of js into two steps
+add watching files and automatic bundling after change
+deploy bundled version
 flatten the path to images
+automate deployment
+
+update dependent css and js version
 reorganise js structure
+use strict
+rewrite js code
+
 clicking on the image in archive should move to the page
-change spPosts to json
 remove # from url
 getPostItemById - replace == with ===
