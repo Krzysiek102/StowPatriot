@@ -5,9 +5,6 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),  
         cssmin: {  
             sitecss: {  
-                options: {  
-                    banner: '/* My minified css file */'  
-                },  
                 files: {  
                     'bundles/styles.min.css': [  
                         'bower_components/pure/pure-min.css',  
