@@ -33,7 +33,22 @@ module.exports = function (grunt) {
                 ],  
                 dest: 'bundles/scripts.min.js'  
             }  
-        }  
+        },
+        watch: {
+            files: [  
+                'bower_components/angular/angular.min.js',
+                'bower_components/angular-route/angular-route.min.js',
+                'scripts/domain/consts.js',
+                'scripts/domain/post.js',
+                'scripts/domain/spPosts.js',
+                'scripts/domain/spMenu.js',
+                'scripts/domain/postController.js',
+                'scripts/domain/postsController.js',
+                'scripts/domain/routingDefinition.js',
+                'scripts/domain/app.js'
+                ],
+            tasks: ['uglify']
+        }
     });  
     // Default task.  
     grunt.registerTask('default', ['uglify', 'cssmin']);  
