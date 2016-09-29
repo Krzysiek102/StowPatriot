@@ -1,8 +1,10 @@
-separate minification of js into two steps
-add watching files and automatic bundling after change
 deploy bundled version
+
 flatten the path to images
 automate deployment
+
+tasks in vs code
+consider adding e2e tests
 
 update dependent css and js version
 reorganise js structure

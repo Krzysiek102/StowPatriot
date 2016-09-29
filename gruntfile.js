@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         cssmin: {
-            sitecss: {
+            styles: {
                 files: {
                     'bundles/styles.min.css': [
                         'bower_components/pure/pure-min.css',
@@ -18,10 +18,17 @@ module.exports = function (grunt) {
             options: {
                 compress: false
             },
-            applib: {
-                src: [
+            externals: {
+                files: {
+                    'bundles/externals.min.js': [
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-route/angular-route.min.js',
+                ],
+                }
+            },
+            scripts:{
+                files: {
+                    'bundles/scripts.min.js': [
                     'scripts/domain/consts.js',
                     'scripts/domain/post.js',
                     'scripts/domain/spPosts.js',
@@ -31,14 +38,19 @@ module.exports = function (grunt) {
                     'scripts/domain/routingDefinition.js',
                     'scripts/domain/app.js'
                 ],
-                dest: 'bundles/scripts.min.js'
+                }                
             }
         },
         watch: {
-            js: {
+            externals: {
                 files: [
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-route/angular-route.min.js',
+                ],
+                tasks: ['uglify:externals']
+            },
+            scripts: {
+                files: [
                     'scripts/domain/consts.js',
                     'scripts/domain/post.js',
                     'scripts/domain/spPosts.js',
@@ -48,8 +60,8 @@ module.exports = function (grunt) {
                     'scripts/domain/routingDefinition.js',
                     'scripts/domain/app.js'
                 ],
-                tasks: ['uglify']
-            },
+                tasks: ['uglify:scripts']
+            },            
             css: {
                 files: [
                     'bower_components/pure/pure-min.css',
