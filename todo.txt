@@ -1,12 +1,14 @@
-deploy bundled version
-
 flatten the path to images
+flatten the path to scripts
+
 automate deployment
 
 tasks in vs code
-consider adding e2e tests
 
 update dependent css and js version
+
+add e2e tests
+
 reorganise js structure
 use strict
 rewrite js code
