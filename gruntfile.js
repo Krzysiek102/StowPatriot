@@ -51,14 +51,7 @@ module.exports = function (grunt) {
             },
             scripts: {
                 files: [
-                    'scripts/domain/consts.js',
-                    'scripts/domain/post.js',
-                    'scripts/domain/spPosts.js',
-                    'scripts/domain/spMenu.js',
-                    'scripts/domain/postController.js',
-                    'scripts/domain/postsController.js',
-                    'scripts/domain/routingDefinition.js',
-                    'scripts/domain/app.js'
+                    'scripts/domain/*.js'
                 ],
                 tasks: ['uglify:scripts']
             },            
@@ -66,8 +59,7 @@ module.exports = function (grunt) {
                 files: [
                     'bower_components/pure/pure-min.css',
                     'bower_components/pure/grids-responsive-min.css',
-                    'styles/blog.css',
-                    'styles/app.css'],
+                    'styles/*.css'],
                 tasks: ['cssmin']
             }
         }
