@@ -1,5 +1,3 @@
-tasks in vs code
-
 automate deployment
 
 update dependent css and js version
