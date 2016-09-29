@@ -1,9 +1,9 @@
 flatten the path to images
 flatten the path to scripts
 
-automate deployment
-
 tasks in vs code
+
+automate deployment
 
 update dependent css and js version
 
