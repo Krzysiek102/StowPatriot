@@ -1,3 +1,4 @@
+grunt - refer to files using *
 flatten the path to images
 flatten the path to scripts
 
