@@ -76,7 +76,11 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: '.',
                         src: [
-                            "todo.txt",
+                            "images/*",
+                            "favicon.ico",
+                            "pages/*",
+                            "bundles/*",
+                            "index.html"
                         ]
                     }
                 ]
