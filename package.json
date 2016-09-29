@@ -12,7 +12,7 @@
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-ftp-push": "^1.1.1",
+    "grunt-ftp-push": "^1.0.0",
     "matchdep": "^1.0.1"
   },
   "repository": {
