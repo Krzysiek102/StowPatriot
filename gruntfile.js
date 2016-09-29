@@ -29,14 +29,14 @@ module.exports = function (grunt) {
             scripts:{
                 files: {
                     'bundles/scripts.min.js': [
-                    'scripts/domain/consts.js',
-                    'scripts/domain/post.js',
-                    'scripts/domain/spPosts.js',
-                    'scripts/domain/spMenu.js',
-                    'scripts/domain/postController.js',
-                    'scripts/domain/postsController.js',
-                    'scripts/domain/routingDefinition.js',
-                    'scripts/domain/app.js'
+                    'scripts/consts.js',
+                    'scripts/post.js',
+                    'scripts/spPosts.js',
+                    'scripts/spMenu.js',
+                    'scripts/postController.js',
+                    'scripts/postsController.js',
+                    'scripts/routingDefinition.js',
+                    'scripts/app.js'
                 ],
                 }                
             }
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
             },
             scripts: {
                 files: [
-                    'scripts/domain/*.js'
+                    'scripts/*.js'
                 ],
                 tasks: ['uglify:scripts']
             },            
