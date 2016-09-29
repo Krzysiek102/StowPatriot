@@ -76,18 +76,57 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: '.',
                         src: [
-                            "images/*",
+                            "images/**/*",
                             "favicon.ico",
-                            "pages/*",
-                            "bundles/*",
+                            "pages/**/*",
+                            "bundles/**/*",
                             "index.html"
                         ]
                     }
                 ]
-            }
+            },
+            deployCustom: {
+                options: {
+                    authKey: "ugu",
+                    host: "stowpatriot.ugu.pl",
+                    dest: "/",
+                    port: 21
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '.',
+                        src: [
+                            "pages/**/*",
+                            "bundles/scripts.min.js",
+                            "bundles/styles.min.css",
+                            "index.html"
+                        ]
+                    }
+                ]
+            },
+            deployScripts: {
+                options: {
+                    authKey: "ugu",
+                    host: "stowpatriot.ugu.pl",
+                    dest: "/",
+                    port: 21
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '.',
+                        src: [
+                            "bundles/scripts.min.js",
+                        ]
+                    }
+                ]
+            }        
         }
     });
     // Default task.  
     grunt.registerTask('default', ['uglify', 'cssmin']);
-    grunt.registerTask('deploy', ['ftp_push']);
+    grunt.registerTask('deploy', ['ftp_push:deploy']);
+    grunt.registerTask('deployCustom', ['ftp_push:deployCustom']);
+    grunt.registerTask('deployScripts', ['ftp_push:deployScripts']);
 };
