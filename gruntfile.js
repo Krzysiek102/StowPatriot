@@ -21,24 +21,24 @@ module.exports = function (grunt) {
             externals: {
                 files: {
                     'bundles/externals.min.js': [
-                    'bower_components/angular/angular.min.js',
-                    'bower_components/angular-route/angular-route.min.js',
-                ],
+                        'bower_components/angular/angular.min.js',
+                        'bower_components/angular-route/angular-route.min.js',
+                    ],
                 }
             },
             scripts:{
                 files: {
                     'bundles/scripts.min.js': [
-                    'scripts/consts.js',
-                    'scripts/post.js',
-                    'scripts/spPosts.js',
-                    'scripts/spMenu.js',
-                    'scripts/postController.js',
-                    'scripts/postsController.js',
-                    'scripts/routingDefinition.js',
-                    'scripts/app.js'
-                ],
-                }                
+                        'scripts/consts.js',
+                        'scripts/post.js',
+                        'scripts/spPosts.js',
+                        'scripts/spMenu.js',
+                        'scripts/postController.js',
+                        'scripts/postsController.js',
+                        'scripts/routingDefinition.js',
+                        'scripts/app.js'
+                    ],
+                }
             }
         },
         watch: {
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
                     'scripts/*.js'
                 ],
                 tasks: ['uglify:scripts']
-            },            
+            },
             css: {
                 files: [
                     'bower_components/pure/pure-min.css',
@@ -62,8 +62,28 @@ module.exports = function (grunt) {
                     'styles/*.css'],
                 tasks: ['cssmin']
             }
+        },
+        ftp_push: {
+            deploy: {
+                options: {
+                    authKey: "ugu",
+                    host: "stowpatriot.ugu.pl",
+                    dest: "/",
+                    port: 21
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '.',
+                        src: [
+                            "todo.txt",
+                        ]
+                    }
+                ]
+            }
         }
     });
     // Default task.  
     grunt.registerTask('default', ['uglify', 'cssmin']);
+    grunt.registerTask('deploy', ['ftp_push']);
 };

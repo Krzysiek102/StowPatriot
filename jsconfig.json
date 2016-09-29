@@ -7,10 +7,13 @@
 		"node_modules",
 		"bower_components",
 		"images",
+		"bundles",
 		"typings",
 		"README.md",
         "LICENSE",
         "todo.txt",
-        ".gitignore"
+        ".gitignore",
+		".ftpauth",
+		"favicon.ico"
 	]
 }
