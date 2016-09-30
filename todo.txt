@@ -1,11 +1,7 @@
-automate deployment
-
-update dependent css and js version
-
 add e2e tests
 
 reorganise js structure
-use strict
+use stric
 rewrite js code
 
 clicking on the image in archive should move to the page
