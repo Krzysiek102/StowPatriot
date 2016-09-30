@@ -1,4 +1,6 @@
-add e2e tests
+add list of commands to package.json as in angular seed
+consider travis CI
+e2e tests
 
 reorganise js structure
 use stric
