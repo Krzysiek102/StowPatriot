@@ -1,4 +1,3 @@
-how to use typings efectively
 e2e tests
 
 reorganise js structure
