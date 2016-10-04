@@ -33,6 +33,15 @@
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor tests/e2e/protractor.conf.js"
+    "protractor": "protractor tests/e2e/protractor.conf.js",
+
+    "bundle": "grunt",
+    "watch": "grunt watch",
+    "server": "http-server -a localhost -p 8000 -c-1",
+    "integration-tests": "webdriver-manager update && protractor tests/e2e/protractor.conf.js",
+    
+    "deploy": "grunt deploy",
+    "deploy-custom": "grunt deployCustom",
+    "deploy-scripts": "grunt deployScripts"
   }
 }
