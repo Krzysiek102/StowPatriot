@@ -11,14 +11,15 @@ Prerequisites:
 * tsd i nstall
 * grunt
 
-Prerequisites for tests:
+Prerequisites for e2e tests:
 * npm install -g protractor
 * webdriver-manager update
 
 
 How to run a page:
-* in the folder containing index.html file, run command: http-server -c-1
+* grunt watch
+* http-server -c-1
 * open http://localhost:8080/ in your browser
 
-How to run tests:
+How to run e2e tests:
 * webdriver-manager start
