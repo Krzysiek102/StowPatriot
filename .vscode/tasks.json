@@ -7,12 +7,36 @@
     "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "watch",
-            "args": ["grunt watch"]
+            "taskName": "start",
+            "args": ["npm start"]
         },
         {
-            "taskName": "start",
-            "args": ["http-server -a localhost -p 8000 -c-1"]
-        }
+            "taskName": "bundle",
+            "args": ["npm run bundle"]
+        },  
+        {
+            "taskName": "watch",
+            "args": ["npm run watch"]
+        },
+        {
+            "taskName": "server",
+            "args": ["npm run server"]
+        },
+        {
+            "taskName": "integration-tests",
+            "args": ["npm run integration-tests"]
+        },
+        {
+            "taskName": "deploy",
+            "args": ["npm run deploy"]
+        },  
+        {
+            "taskName": "deploy-custom",
+            "args": ["npm run deploy-custom"]
+        },
+        {
+            "taskName": "deploy-scripts",
+            "args": ["npm run deploy-scripts"]
+        },                                                          
     ]
 }

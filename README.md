@@ -25,3 +25,5 @@ https://github.com/Robert-W/grunt-ftp-push/blob/master/README.md
 ** to deploy all files: npm run deploy
 ** to deploy custom files only: npm run deploy-custom
 ** to deploy custom js scripts only: npm run deploy-scripts
+
+If you use VS Code, all these command can be triggered from VS Code as tasks - for more details have a look on tasks.json file
