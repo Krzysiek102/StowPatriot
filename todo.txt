@@ -1,4 +1,4 @@
-add list of commands to package.json as in angular seed
+how to use typings efectively
 e2e tests
 
 reorganise js structure
