@@ -4,7 +4,7 @@ http://stowpatriot.ugu.pl
 
 How to run a page:
 * npm start
-* http://localhost:8000/index.html
+* http://localhost:8000
 
 How to run e2e tests:
 * npm run protractor
