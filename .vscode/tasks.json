@@ -11,8 +11,8 @@
             "args": ["grunt watch"]
         },
         {
-            "taskName": "startServer",
-            "args": ["http-server -c-1"]
+            "taskName": "start",
+            "args": ["http-server -a localhost -p 8000 -c-1"]
         }
     ]
 }
