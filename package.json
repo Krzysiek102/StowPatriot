@@ -38,7 +38,7 @@
     "bundle": "grunt",
     "watch": "grunt watch",
     "server": "http-server -a localhost -p 8000 -c-1",
-    "integration-tests": "webdriver-manager update && protractor tests/e2e/protractor.conf.js",
+    "integration-tests": "grunt && webdriver-manager update && protractor tests/e2e/protractor.conf.js",
     
     "deploy": "grunt deploy",
     "deploy-custom": "grunt deployCustom",
