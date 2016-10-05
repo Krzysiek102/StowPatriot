@@ -1,4 +1,5 @@
-e2e tests
+integration tests for filtering, sorting, routing, navigation
+integration tests on different browsers
 
 reorganise js structure
 use stric
