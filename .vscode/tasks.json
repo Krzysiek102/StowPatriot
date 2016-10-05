@@ -37,6 +37,6 @@
         {
             "taskName": "deploy-scripts",
             "args": ["npm run deploy-scripts"]
-        },                                                          
+        }                                             
     ]
 }
