@@ -7,21 +7,28 @@ describe('News page tests', function () {
   it('should filter news list', function () {
     browser.get('http://localhost:8000/#/news');
 
+    var news;
+    //start filtering
     element(by.model('query')).sendKeys('w obronie wolnych mediów');
-
-    var news = element.all(by.repeater('post in c.posts'));
+    news = element.all(by.repeater('post in c.posts'));
     expect(news.count()).toEqual(1);
+
+    //clear the filtering
+    element(by.model('query')).clear().then(function () {
+      news = element.all(by.repeater('post in c.posts'));
+      expect(news.count()).toBeGreaterThan(1);
+    })
+
   });
 
   it('should sort news list', function () {
     browser.get('http://localhost:8000/#/news');
 
-    element(by.model('c.orderMode')).sendKeys('date');
-
-    var news = element.all(by.repeater('post in c.posts'));
-
-    var oldest = news[0].element(by.className('post-meta'));
-    expect(oldest.getText()).toEqual('2013-06-19');
+    var select = element(by.model('c.orderMode'));
+    select.$('[value="date"]').click().then(function () {
+      news = element.all(by.repeater('post in c.posts'));
+      expect(news.count()).toBeGreaterThan(1);
+    })
   });
 
 });
