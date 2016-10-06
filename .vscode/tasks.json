@@ -37,6 +37,10 @@
         {
             "taskName": "deploy-scripts",
             "args": ["npm run deploy-scripts"]
-        }                                             
+        },
+        {
+            "taskName": "integration-tests-light",
+            "args": ["npm run integration-tests-light"]
+        }                                                            
     ]
 }
