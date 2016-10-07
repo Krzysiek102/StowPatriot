@@ -1,16 +1,17 @@
 describe('News page tests', function () {
-  it('should have a title', function () {
+
+  beforeEach(function() {
     browser.get('http://localhost:8000/#/news');
+  });
+
+  it('should have a title', function () {
     expect(browser.getTitle()).toEqual("Stowarzyszenie Chrześcijańsko - Patrytiotyczne Ziemi Włodawskiej");
   });
 
-  it('should filter news list', function () {
-    browser.get('http://localhost:8000/#/news');
-
-    var news;
+  it('should filter news list and clean fitlering', function () {
     //start filtering
     element(by.model('query')).sendKeys('w obronie wolnych mediów');
-    news = element.all(by.repeater('post in c.posts'));
+    var news = element.all(by.repeater('post in c.posts'));
     expect(news.count()).toEqual(1);
 
     //clear the filtering
@@ -22,8 +23,6 @@ describe('News page tests', function () {
   });
 
   it('should sort news list from the oldest', function () {
-    browser.get('http://localhost:8000/#/news');
-
     var select = element(by.model('c.orderMode'));
     select.$('[value="date"]').click().then(function () {
       var news = element.all(by.repeater('post in c.posts'));
@@ -34,8 +33,6 @@ describe('News page tests', function () {
   });
 
   it('should sort news list from the newest', function () {
-    browser.get('http://localhost:8000/#/news');
-
     var select = element(by.model('c.orderMode'));
     select.$('[value="-date"]').click().then(function () {
       var news = element.all(by.repeater('post in c.posts'));

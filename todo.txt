@@ -1,4 +1,7 @@
-integration tests for filtering, sorting, routing, navigation
+review of protractor capabilities
+integration tests for navigation in news
+integration tests for routing
+integration tests for filtering, sorting, navigation in archives
 integration tests on different browsers
 
 reorganise js structure
