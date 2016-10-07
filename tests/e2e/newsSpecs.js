@@ -26,8 +26,7 @@ describe('News page tests', function () {
     var select = element(by.model('c.orderMode'));
     select.$('[value="date"]').click().then(function () {
       var news = element.all(by.repeater('post in c.posts'));
-      var index = 0;
-      var oldestDate = news.get(index).element(by.css('.post-meta')).getText();
+      var oldestDate = news.first().element(by.css('.post-meta')).getText();
       expect(oldestDate).toEqual('2013-06-19');
     });
   });
@@ -36,11 +35,8 @@ describe('News page tests', function () {
     var select = element(by.model('c.orderMode'));
     select.$('[value="-date"]').click().then(function () {
       var news = element.all(by.repeater('post in c.posts'));
-      news.count().then(function (count) {
-        var index = count-1;
-        var oldestDate = news.get(index).element(by.css('.post-meta')).getText();
-        expect(oldestDate).toEqual('2013-06-19');
-      });
+      var oldestDate = news.last().element(by.css('.post-meta')).getText();
+      expect(oldestDate).toEqual('2013-06-19');
     });
   });
 
