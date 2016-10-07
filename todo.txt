@@ -1,3 +1,6 @@
+settings sync:
+https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+
 review of protractor capabilities
 integration tests for navigation in news
 integration tests for routing
