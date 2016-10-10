@@ -1,6 +1,6 @@
 describe('News page tests', function () {
 
-  beforeEach(function() {
+  beforeEach(function () {
     browser.get('http://localhost:8000/#/news');
   });
 
@@ -38,6 +38,21 @@ describe('News page tests', function () {
       var oldestDate = news.last().element(by.css('.post-meta')).getText();
       expect(oldestDate).toEqual('2013-06-19');
     });
+  });
+
+  it('should navigate to detailed page after clicking the title and return after clicking return button', function () {
+    var news = element.all(by.repeater('post in c.posts'));
+    news.last().element(by.css('.post-title-link')).click().then(function () {
+      var newsTitle = element(by.css('.post-title')).getText();
+      //we redirected to the correct news
+      expect(newsTitle).toBe('Marsz w obronie wolnych mediów we Włodawie');
+      var returnButton = element(by.css('#return-button'));
+      returnButton.click().then(function () {
+        //we have more then one news one page
+        news = element.all(by.repeater('post in c.posts'));
+        expect(news.count()).toBeGreaterThan(1);
+      })
+    })
   });
 
 });
