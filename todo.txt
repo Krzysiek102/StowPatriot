@@ -1,4 +1,3 @@
-integration tests for filtering, sorting, navigation in archives
 integration test for navigation on different pages
 integration tests on different browsers
 
