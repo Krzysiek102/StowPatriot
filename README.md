@@ -18,6 +18,9 @@ How to run server (without full installation):
 How to run e2e tests:
 * npm run integration-tests
 
+How to run e2e tests without bundling:
+* npm run integration-tests-light
+
 How to deploy on production:
 * put .ftpauth file with appropriate credentials into the main directory:
 https://github.com/Robert-W/grunt-ftp-push/blob/master/README.md
