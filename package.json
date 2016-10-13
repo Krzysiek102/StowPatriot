@@ -43,6 +43,8 @@
     
     "deploy": "grunt deploy",
     "deploy-custom": "grunt deployCustom",
-    "deploy-scripts": "grunt deployScripts"
+    "deploy-scripts": "grunt deployScripts",
+    "watch-exernals": "grunt watch-externals",
+    "watch-scripts": "grunt watch-scripts"
   }
 }

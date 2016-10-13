@@ -10,7 +10,9 @@ How to apply changes after each change in css and js files by running bundling a
 * npm run bundle
 
 How to watch files for automatic bundling and minification after each change:
-* npm run watch
+* all files: npm run watch
+* only external js libraries: npm run watch-externals
+* only internal scripts: npm run watch-scripts
 
 How to run server (without full installation):
 * npm run server

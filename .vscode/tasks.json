@@ -41,6 +41,14 @@
         {
             "taskName": "integration-tests-light",
             "args": ["npm run integration-tests-light"]
-        }                                                            
+        },
+        {
+            "taskName": "watch-externals",
+            "args": ["npm run watch-externals"]
+        },
+        {
+            "taskName": "watch-scripts",
+            "args": ["npm run watch-scripts"]
+        }                                                              
     ]
 }

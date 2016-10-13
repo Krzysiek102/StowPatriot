@@ -129,4 +129,6 @@ module.exports = function (grunt) {
     grunt.registerTask('deploy', ['ftp_push:deploy']);
     grunt.registerTask('deployCustom', ['ftp_push:deployCustom']);
     grunt.registerTask('deployScripts', ['ftp_push:deployScripts']);
+    grunt.registerTask('watch-externals', ['watch:externals']);
+    grunt.registerTask('watch-scripts', ['watch:scripts']);
 };
