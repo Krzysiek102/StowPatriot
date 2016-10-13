@@ -1,5 +1,3 @@
-integration tests on different browsers
-
 reorganise js structure
 use stric
 rewrite js code
