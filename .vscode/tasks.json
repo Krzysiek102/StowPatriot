@@ -27,6 +27,14 @@
             "args": ["npm run integration-tests"]
         },
         {
+            "taskName": "test-watch",
+            "args": ["npm run test-watch"]
+        },
+        {
+            "taskName": "test",
+            "args": ["npm run test"]
+        },                
+        {
             "taskName": "deploy",
             "args": ["npm run deploy"]
         },  
