@@ -1,23 +1,12 @@
-var stowPatriot;
-(function (stowPatriot) {
-    var urls = (function () {
-        function urls() {
-        }
-        urls.archives = '/archives';
-        urls.authorities = '/authorities';
-        urls.contact = '/contact';
-        urls.history = '/history';
-        urls.news = '/news';
-        urls.statute = '/statute';
-        urls.activity = '/activity';
-        return urls;
-    })();
-    stowPatriot.urls = urls;
-    var versionHelper = (function () {
-        function versionHelper() {
-        }
-        versionHelper.version = "25";
-        return versionHelper;
-    })();
-    stowPatriot.versionHelper = versionHelper;
-})(stowPatriot || (stowPatriot = {}));
+class StowPatriotUrls{
+    static get Archives() {return '/archives';};
+    static get Authorities() {return '/authorities';};
+    static get Contact() {return '/contact';};
+    static get History() {return '/history';};
+    static get News() {return '/news';};
+    static get Statute() {return '/statute';};
+    static get Activity() {return '/activity';};
+};
+class VersionHelper{
+    static get Version(){return "25";};
+};

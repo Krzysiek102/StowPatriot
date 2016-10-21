@@ -2,7 +2,7 @@ var stowPatriot;
 (function (stowPatriot) {
     function spMenu() {
         return {
-            templateUrl: 'pages/menu.html' + '?' + stowPatriot.versionHelper.version,
+            templateUrl: 'pages/menu.html' + '?' + VersionHelper.Version,
         };
     }
     stowPatriot.spMenu = spMenu;

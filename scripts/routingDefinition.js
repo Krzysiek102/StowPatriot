@@ -4,39 +4,39 @@ var stowPatriot;
         function routingDefinition($routeProvider) {
             this.$routeProvider = $routeProvider;
             this.$routeProvider.
-                when(stowPatriot.urls.news, {
-                templateUrl: 'pages/news.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.News, {
+                templateUrl: 'pages/news.html' + '?' + VersionHelper.Version,
                 controller: stowPatriot.newsController
             }).
-                when(stowPatriot.urls.news + '/:id', {
-                templateUrl: 'pages/newsItem.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.News + '/:id', {
+                templateUrl: 'pages/newsItem.html' + '?' + VersionHelper.Version,
                 controller: stowPatriot.newsItemController
             }).
-                when(stowPatriot.urls.archives, {
-                templateUrl: 'pages/archives.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.Archives, {
+                templateUrl: 'pages/archives.html' + '?' + VersionHelper.Version,
                 controller: stowPatriot.archivesController
             }).
-                when(stowPatriot.urls.archives + '/:id', {
-                templateUrl: 'pages/archivesItem.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.Archives + '/:id', {
+                templateUrl: 'pages/archivesItem.html' + '?' + VersionHelper.Version,
                 controller: stowPatriot.archivesItemController
             }).
-                when(stowPatriot.urls.authorities, {
-                templateUrl: 'pages/authorities.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.Authorities, {
+                templateUrl: 'pages/authorities.html' + '?' + VersionHelper.Version,
             }).
-                when(stowPatriot.urls.contact, {
-                templateUrl: 'pages/contact.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.Contact, {
+                templateUrl: 'pages/contact.html' + '?' + VersionHelper.Version,
             }).
-                when(stowPatriot.urls.history, {
-                templateUrl: 'pages/history.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.History, {
+                templateUrl: 'pages/history.html' + '?' + VersionHelper.Version,
             }).
-                when(stowPatriot.urls.statute, {
-                templateUrl: 'pages/statute.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.Statute, {
+                templateUrl: 'pages/statute.html' + '?' + VersionHelper.Version,
             }).
-                when(stowPatriot.urls.activity, {
-                templateUrl: 'pages/activity.html' + '?' + stowPatriot.versionHelper.version,
+                when(StowPatriotUrls.Activity, {
+                templateUrl: 'pages/activity.html' + '?' + VersionHelper.Version,
             }).
                 otherwise({
-                redirectTo: stowPatriot.urls.news
+                redirectTo: StowPatriotUrls.News
             });
         }
         routingDefinition.$inject = ['$routeProvider'];
