@@ -1,8 +1,7 @@
-reorganise js structure
+write extra integration tests against posts
+rewrite js code to ES6
+extract posts and news into separate files
 use stric
-rewrite js code
-
-extract posts and news into json file
 
 clicking on the image in archive should move to the page
 remove # from url
