@@ -1,3 +1,6 @@
+/// <reference path="../../typings/globals/jasmine/index.d.ts" />
+/// <reference path="../../typings/globals/angular-protractor/index.d.ts" />
+
 describe('Navigation', function () {
 
     it('should correctly go to authorities page', function () {

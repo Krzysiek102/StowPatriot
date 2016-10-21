@@ -1,3 +1,6 @@
+/// <reference path="../../typings/globals/jasmine/index.d.ts" />
+/// <reference path="../../typings/globals/angular-protractor/index.d.ts" />
+
 describe('News page tests', function () {
 
   beforeEach(function () {
