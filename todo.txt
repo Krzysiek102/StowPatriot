@@ -1,9 +1,10 @@
-write extra integration tests against posts
+clicking on the image in archive should move to the page
+replace all var with let
+consider adding namespaces and rename classes
 rewrite js code to ES6
 extract posts and news into separate files
 use stric
 
-clicking on the image in archive should move to the page
 remove # from url
 getPostItemById - replace == with ===
 

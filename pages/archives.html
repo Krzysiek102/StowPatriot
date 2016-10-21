@@ -16,12 +16,10 @@ Sortuj:
                     <a class="post-title-link" href="#archives/{{post.id}}">{{post.title}}</a>
                 </h2>
             </header>
-            <div class="post-description">
-                <p>
-                    {{post.shortDescription}}
-                    <a href="#archives/{{post.id}}">Czytaj więcej</a>
-                </p>
-            </div>
+            <div>
+                <span class="post-description"> {{post.shortDescription}}</span> 
+                <a class="post-more-info" href="#archives/{{post.id}}">Czytaj więcej</a>
+            </div>            
         </section>
     </div>
 </div>

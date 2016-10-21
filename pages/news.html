@@ -21,11 +21,9 @@ Sortuj:
                     {{post.date | date:'yyyy-MM-dd'}}
                 </p>
             </header>
-            <div class="post-description">
-                <p>
-                {{post.shortDescription}} 
-                    <a href="#news/{{post.id}}">Czytaj więcej</a>
-                </p>
+            <div>
+                <span class="post-description"> {{post.shortDescription}}</span> 
+                <a class="post-more-info" href="#news/{{post.id}}">Czytaj więcej</a>
             </div>
         </section>
     </div>

@@ -12,6 +12,9 @@ describe('Archives page tests', function () {
         element(by.model('query')).sendKeys('Koperty, zdjęcia, nadruki i znaczki');
         var news = element.all(by.repeater('post in c.posts'));
         expect(news.count()).toEqual(1);
+        var soleItem = news.first();
+        expect(soleItem.element(by.css('.post-title')).getText()).toBe('Koperty, zdjęcia, nadruki i znaczki');
+        expect(soleItem.element(by.css('.post-description')).getText()).toBe('Pamiątkowe koperty, zdjęcia, nadruki i znaczki wykonywane w czasach stanu wojennego i później.');
 
         //clear the filtering
         element(by.model('query')).clear().then(function () {
@@ -53,5 +56,47 @@ describe('Archives page tests', function () {
             })
         })
     });
+
+  it('should navigate to detailed page after clicking the title and return after clicking return button', function () {
+    var news = element.all(by.repeater('post in c.posts'));
+    news.last().element(by.css('.post-title-link')).click().then(function () {
+      //we redirected to the correct news
+      expect(element(by.css('.post-title')).getText()).toBe('Koperty, zdjęcia, nadruki i znaczki');
+      var returnButton = element(by.css('#return-button'));
+      returnButton.click().then(function () {
+        //we have more then one news one page
+        news = element.all(by.repeater('post in c.posts'));
+        expect(news.count()).toBeGreaterThan(1);
+      })
+    })
+  });
+
+  it('should navigate to detailed page after clicking more info button and return after clicking return button', function () {
+    var news = element.all(by.repeater('post in c.posts'));
+    news.last().element(by.css('.post-more-info')).click().then(function () {
+      //we redirected to the correct news
+      expect(element(by.css('.post-title')).getText()).toBe('Koperty, zdjęcia, nadruki i znaczki');
+      var returnButton = element(by.css('#return-button'));
+      returnButton.click().then(function () {
+        //we have more then one news one page
+        news = element.all(by.repeater('post in c.posts'));
+        expect(news.count()).toBeGreaterThan(1);
+      })
+    })
+  });  
+
+  it('should navigate to detailed page after clicking image and return after clicking return button', function () {
+    var news = element.all(by.repeater('post in c.posts'));
+    news.last().element(by.css('.post-avatar')).click().then(function () {
+      //we redirected to the correct news
+      expect(element(by.css('.post-title')).getText()).toBe('Koperty, zdjęcia, nadruki i znaczki');
+      var returnButton = element(by.css('#return-button'));
+      returnButton.click().then(function () {
+        //we have more then one news one page
+        news = element.all(by.repeater('post in c.posts'));
+        expect(news.count()).toBeGreaterThan(1);
+      })
+    })
+  });       
 
 });
