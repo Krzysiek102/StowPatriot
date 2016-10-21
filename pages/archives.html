@@ -11,7 +11,9 @@ Sortuj:
     <div class="posts">
         <section class="post">
             <header class="post-header">
-                <img class="post-avatar" height="80" width="80" ng-src="{{post.titleImageUrl}}">
+                <a href="#archives/{{post.id}}">
+                    <img class="post-avatar" height="80" width="80" ng-src="{{post.titleImageUrl}}">
+                </a>                
                 <h2 class="post-title">
                     <a class="post-title-link" href="#archives/{{post.id}}">{{post.title}}</a>
                 </h2>
