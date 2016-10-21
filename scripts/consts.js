@@ -8,5 +8,5 @@ class StowPatriotUrls{
     static get Activity() {return '/activity';};
 };
 class VersionHelper{
-    static get Version(){return "25";};
+    static get Version(){return '25';};
 };
