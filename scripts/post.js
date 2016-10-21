@@ -1,13 +1,5 @@
 var stowPatriot;
 (function (stowPatriot) {
-    var imageDescription = (function () {
-        function imageDescription(id, description) {
-            this.id = id;
-            this.description = description;
-        }
-        return imageDescription;
-    })();
-    stowPatriot.imageDescription = imageDescription;
     var post = (function () {
         function post(id, date, title, titleImageUrl, shortDescription, descriptionPageUrl) {
             this.id = id;
