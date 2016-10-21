@@ -14,31 +14,26 @@ module.exports = function (grunt) {
                 }
             }
         },
-        uglify: {
-            options: {
-                compress: false
-            },
+        concat: {
             externals: {
-                files: {
-                    'bundles/externals.min.js': [
-                        'bower_components/angular/angular.min.js',
-                        'bower_components/angular-route/angular-route.min.js',
-                    ],
-                }
+                src: [
+                    'bower_components/angular/angular.min.js',
+                    'bower_components/angular-route/angular-route.min.js',
+                ],
+                dest: 'bundles/externals.min.js',
             },
-            scripts:{
-                files: {
-                    'bundles/scripts.min.js': [
-                        'scripts/consts.js',
-                        'scripts/post.js',
-                        'scripts/spPosts.js',
-                        'scripts/spMenu.js',
-                        'scripts/postController.js',
-                        'scripts/postsController.js',
-                        'scripts/routingDefinition.js',
-                        'scripts/app.js'
-                    ],
-                }
+            scripts: {
+                src: [
+                    'scripts/consts.js',
+                    'scripts/post.js',
+                    'scripts/spPosts.js',
+                    'scripts/spMenu.js',
+                    'scripts/postController.js',
+                    'scripts/postsController.js',
+                    'scripts/routingDefinition.js',
+                    'scripts/app.js'
+                ],
+                dest: 'bundles/scripts.min.js',
             }
         },
         watch: {
@@ -47,13 +42,13 @@ module.exports = function (grunt) {
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-route/angular-route.min.js',
                 ],
-                tasks: ['uglify:externals']
+                tasks: ['concat:externals']
             },
             scripts: {
                 files: [
                     'scripts/*.js'
                 ],
-                tasks: ['uglify:scripts']
+                tasks: ['concat:scripts']
             },
             css: {
                 files: [
@@ -121,11 +116,11 @@ module.exports = function (grunt) {
                         ]
                     }
                 ]
-            }        
+            }
         }
     });
     // Default task.  
-    grunt.registerTask('default', ['uglify', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'cssmin']);
     grunt.registerTask('deploy', ['ftp_push:deploy']);
     grunt.registerTask('deployCustom', ['ftp_push:deployCustom']);
     grunt.registerTask('deployScripts', ['ftp_push:deployScripts']);

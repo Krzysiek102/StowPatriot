@@ -7,8 +7,8 @@
     "bower": "^1.7.9",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.2",
-    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-ftp-push": "^1.0.0",
     "http-server": "^0.9.0",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Krzysiek102/StowPatriot#readme",
   "scripts": {
-    "postinstall": "bower install && typings install && grunt uglify && grunt cssmin",
+    "postinstall": "bower install && typings install && grunt",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1",
     "preupdate-webdriver": "npm install",
@@ -40,7 +40,7 @@
     "server": "http-server -a localhost -p 8000 -c-1",
     "integration-tests": "grunt && webdriver-manager update && protractor tests/e2e/protractor.conf.js",
     "integration-tests-light": "protractor tests/e2e/protractor.conf.js",
-    
+
     "deploy": "grunt deploy",
     "deploy-custom": "grunt deployCustom",
     "deploy-scripts": "grunt deployScripts",
