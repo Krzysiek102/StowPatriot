@@ -1,9 +1,9 @@
-replace all var with let
 consider adding namespaces and rename classes
 rewrite js code to ES6
+replace all var with let
 extract posts and news into separate files
-use stric
-
+start using transpiler
+use strict
 remove # from url
 getPostItemById - replace == with ===
 
