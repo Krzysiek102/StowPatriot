@@ -1,4 +1,6 @@
-class StowPatriotUrls{
+var StowPatriot = StowPatriot || {};
+
+StowPatriot.Urls = class {
     static get Archives() {return '/archives';};
     static get Authorities() {return '/authorities';};
     static get Contact() {return '/contact';};
@@ -7,6 +9,6 @@ class StowPatriotUrls{
     static get Statute() {return '/statute';};
     static get Activity() {return '/activity';};
 };
-class VersionHelper{
+StowPatriot.VersionHelper = class {
     static get Version(){return '25';};
 };

@@ -1,8 +1,19 @@
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine'],
-    files: ['*Specs.js'],
+    frameworks: [
+      'jasmine',
+      'jasmine-matchers'
+      ],
+    files: [
+      '../../scripts/consts.js',
+      '*Specs.js'
+      ],
+    plugins: [
+      'karma-chrome-launcher',
+      'karma-jasmine',
+      'karma-jasmine-matchers'
+    ],         
     exclude: [],
     preprocessors: {},
     reporters: ['progress'],
