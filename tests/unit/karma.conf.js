@@ -7,6 +7,7 @@ module.exports = function(config) {
       ],
     files: [
       '../../scripts/consts.js',
+      '../../scripts/post.js',
       '*Specs.js'
       ],
     plugins: [
