@@ -9,5 +9,5 @@ var stowPatriot;
         .controller(stowPatriot.archivesItemController)
         .config(stowPatriot.routingDefinition)
         .directive('spMenu', stowPatriot.spMenu)
-        .service('spPosts', stowPatriot.spPosts);
+        .service('spPosts', StowPatriot.PostService);
 })(stowPatriot || (stowPatriot = {}));
