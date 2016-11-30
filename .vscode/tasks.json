@@ -13,7 +13,11 @@
         {
             "taskName": "bundle",
             "args": ["npm run bundle"]
-        },  
+        }, 
+        {
+            "taskName": "bundle-scripts",
+            "args": ["npm run bundle-scripts"]
+        },          
         {
             "taskName": "watch",
             "args": ["npm run watch"]

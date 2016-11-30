@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                 src: [
                     'scripts/consts.js',
                     'scripts/post.js',
-                    'scripts/spPosts.js',
+                    'scripts/postService.js',
                     'scripts/spMenu.js',
                     'scripts/postController.js',
                     'scripts/postsController.js',
@@ -121,9 +121,10 @@ module.exports = function (grunt) {
     });
     // Default task.  
     grunt.registerTask('default', ['concat', 'cssmin']);
+    grunt.registerTask('scripts', ['concat:scripts']);
     grunt.registerTask('deploy', ['ftp_push:deploy']);
-    grunt.registerTask('deployCustom', ['ftp_push:deployCustom']);
-    grunt.registerTask('deployScripts', ['ftp_push:deployScripts']);
+    grunt.registerTask('deploy-custom', ['ftp_push:deployCustom']);
+    grunt.registerTask('deploy-scripts', ['ftp_push:deployScripts']);
     grunt.registerTask('watch-externals', ['watch:externals']);
     grunt.registerTask('watch-scripts', ['watch:scripts']);
 };
