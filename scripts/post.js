@@ -1,27 +1,29 @@
 var StowPatriot = StowPatriot || {};
 
 StowPatriot.Post = class {
-    constructor(id, date, title, shortDescription){
+    constructor(id, date, title, shortDescription) {
         this.id = id;
         this.date = date;
         this.title = title;
         this.shortDescription = shortDescription;
-        this.titleImageUrl = `images/newsTiles/${id}.JPG`;
+        if (new.target === StowPatriot.Post) {
+            throw new TypeError("Cannot construct Abstract instances directly");
+        }
     }
 };
 
-var stowPatriot;
-(function (stowPatriot) {
-    var post = (function () {
-        function post(id, date, title, titleImageUrl, shortDescription, descriptionPageUrl) {
-            this.id = id;
-            this.date = date;
-            this.title = title;
-            this.titleImageUrl = titleImageUrl;
-            this.shortDescription = shortDescription;
-            this.descriptionPageUrl = descriptionPageUrl;
-        }
-        return post;
-    })();
-    stowPatriot.post = post;
-})(stowPatriot || (stowPatriot = {}));
+StowPatriot.NewsItem = class extends StowPatriot.Post {
+    constructor(id, date, title, shortDescription) {
+        super(id, date, title, shortDescription);
+        this.titleImageUrl = `images/newsTiles/${id}.JPG`;
+        this.descriptionPageUrl = `pages/newsItem/${id}.html?${StowPatriot.VersionHelper.Version}`;
+    }
+};
+
+StowPatriot.ArchiveItem = class extends StowPatriot.Post {
+    constructor(id, date, title, shortDescription) {
+        super(id, date, title, shortDescription);
+        this.titleImageUrl = `images/archivesTiles/${id}.JPG`;
+        this.descriptionPageUrl = `pages/archivesItem/${id}.html?${StowPatriot.VersionHelper.Version}`;
+    }
+};
