@@ -10,6 +10,7 @@ StowPatriot.PostService = class {
             new StowPatriot.NewsItem(5, new Date("2016/01/14"), "Spotkanie opłatkowe we Włodawie", "Spotkanie opłatkowe członków Stowarzyszenia Chrześcijańsko - Patriotycznego Ziemii Włodawskiej oraz Stowarzyszenia Rodzina Katyńska."),
             new StowPatriot.NewsItem(6, new Date("2016/07/22"), "70 rocznica śmierci por. M. Sawickiego (Kruk) oraz por. T. Gardło (Zimny)", "Uścimów Stary - 70 rocznica śmierci poruczników Mieczysława Sawickiego oraz Tadeusza Gardło."),
             new StowPatriot.NewsItem(7, new Date("2015/10/02"), "Protokół z walnego zebrania", "Protokół z walnego zebrania członków Stowarzyszenia Chrześcijańsko- Patriotycznego Ziemi Włodawskiej we Włodawie."),
+            new StowPatriot.NewsItem(8, new Date("2017/05/27"), "Rajd Szlakiem Wyklętych", "Relacja z Rajdu Szlakiem Wyklętych organizowanego przez stowarzyszenie."),
         ];
     };
 
