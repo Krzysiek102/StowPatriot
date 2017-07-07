@@ -10,5 +10,5 @@ StowPatriot.Urls = class {
     static get Activity() {return '/activity';};
 };
 StowPatriot.VersionHelper = class {
-    static get Version(){return '26';};
+    static get Version(){return '27';};
 };
