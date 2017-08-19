@@ -12,6 +12,7 @@ StowPatriot.PostService = class {
             new StowPatriot.NewsItem(7, new Date("2015/10/02"), "Protokół z walnego zebrania", "Protokół z walnego zebrania członków Stowarzyszenia Chrześcijańsko- Patriotycznego Ziemi Włodawskiej we Włodawie."),
             new StowPatriot.NewsItem(8, new Date("2017/05/27"), "Rajd Szlakiem Wyklętych", "Relacja z Rajdu Szlakiem Wyklętych organizowanego przez stowarzyszenie."),
             new StowPatriot.NewsItem(9, new Date("2017/07/16"), 'Pogrzeb Leona Taraszkiewicza ps. "Jastrząb"', "Relacja z uroczystości pogrzebowych we Włodawie."),
+            new StowPatriot.NewsItem(10, new Date("2017/07/30"), '70 rocznia śmierci por. Józefa Struga ps. "Ordon"', "Relacja z uroczystości z miejsca śmierci - lasu pod Wielkopolem, gdzie znajduje się pomnik porucznika"),
         ];
     };
 
