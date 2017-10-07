@@ -13,6 +13,7 @@ StowPatriot.PostService = class {
             new StowPatriot.NewsItem(8, new Date("2017/05/27"), "Rajd Szlakiem Wyklętych", "Relacja z Rajdu Szlakiem Wyklętych organizowanego przez stowarzyszenie."),
             new StowPatriot.NewsItem(9, new Date("2017/07/16"), 'Pogrzeb Leona Taraszkiewicza ps. "Jastrząb"', "Relacja z uroczystości pogrzebowych we Włodawie."),
             new StowPatriot.NewsItem(10, new Date("2017/07/30"), '70 rocznia śmierci por. Józefa Struga ps. "Ordon"', "Relacja z uroczystości z miejsca śmierci - lasu pod Wielkopolem, gdzie znajduje się pomnik porucznika"),
+            new StowPatriot.NewsItem(11, new Date("2017/09/22"), 'Odsłonięcie nagrobka "Kruka" i "Zimnego"', "Relacja z uroczystości w Uścimowie Starym - odsłonięcie nagrobka Tadeusza Gardło i Meczysława Sawickiego."),
         ];
     };
 
