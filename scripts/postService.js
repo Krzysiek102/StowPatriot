@@ -14,6 +14,7 @@ StowPatriot.PostService = class {
             new StowPatriot.NewsItem(9, new Date("2017/07/16"), 'Pogrzeb Leona Taraszkiewicza ps. "Jastrząb"', "Relacja z uroczystości pogrzebowych we Włodawie."),
             new StowPatriot.NewsItem(10, new Date("2017/07/30"), '70 rocznia śmierci por. Józefa Struga ps. "Ordon"', "Relacja z uroczystości z miejsca śmierci - lasu pod Wielkopolem, gdzie znajduje się pomnik porucznika"),
             new StowPatriot.NewsItem(11, new Date("2017/09/22"), 'Odsłonięcie nagrobka "Kruka" i "Zimnego"', "Relacja z uroczystości w Uścimowie Starym - odsłonięcie nagrobka Tadeusza Gardło i Meczysława Sawickiego."),
+            new StowPatriot.NewsItem(12, new Date("2018/03/17"), 'Setna rocznica urodzin "Lalka"', 'Relacja z uroczystości 100 rocznicy urodzin sierżanta Józefa Franczaka "Lalka"'),
         ];
     };
 
@@ -31,7 +32,7 @@ StowPatriot.PostService = class {
     getArchivesItemById(id) {
         return this._getPostItemById(this.getArchives(), id);
     };
-    
+
 
     _getPostItemById(posts, id) {
         for (var i = 0; i < posts.length; i++) {
